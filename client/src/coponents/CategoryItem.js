@@ -1,5 +1,5 @@
 import React from 'react';
-import {getCategoryImage} from "../getCategoryImage";
+import {getCategoryImage} from "../functions/getCategoryImage";
 
 const CategoryItem = ({category, activeNote, archivedNote}) => {
 

@@ -1,104 +1,43 @@
 const {Router} = require('express')
-const {check, validationResult} = require('express-validator')
+const {check} = require('express-validator')
 const router = Router()
-const config = require('config')
+
 const {getAllNotes} = require("./controllers/getAllNotes");
 const {deleteNote} = require("./controllers/deleteNote");
-const {store} = require('../store/store')
+const {addNote} = require("./controllers/addNote");
+const {getOneNote} = require("./controllers/getOneNote");
+const {getStats} = require("./controllers/getStats");
+const {patchNote} = require("./controllers/patchNote");
+const {archiveNote} = require("./controllers/archiveNote");
 
-router.get( //get all
-    '/',
-    getAllNotes)
+router.get('/', getAllNotes)
 
-router.delete( //delete note
-    '/:id',
-    deleteNote
-   )
+router.delete('/:id', deleteNote)
 
+router.post('/',
+    [
+        check('category', 'category incorrect').isString().isIn(["idea", "Quote", "Random", "task"]),
+        check('content', 'content incorrect').isString().isLength({min: 1, max:322}),
+        check('isActive', 'isActive incorrect').isBoolean(),
+        check('name', 'name incorrect').isString(),
+    ],
+    addNote)
 
+router.get('/stats', getStats)
 
-router.post( //add note
-    '/',
+router.get('/:id', getOneNote)
 
-    async (req, res) => {
-        try {
-            const {newNote} = req.body
-            const newItem = store.addNewNote(newNote)
-            newItem
-                ? res.status(201).json({massage: 'success', newItem:newItem})
-                : res.status(501).json({massage: 'failed'})
-        } catch (e) {
-            res.status(500).json({massage: 'Something wrong in login'})
-            console.log(e)
-        }
-    })
+router.patch('/:id',
+    [
+            check('category', 'category incorrect').isString().isIn(["idea", "Quote", "Random", "task"]),
+            check('content', 'content incorrect').isString().isLength({min: 1, max:322}),
+            check('isActive', 'isActive incorrect').isBoolean(),
+            check('id', 'isActive incorrect').isString().matches(/\d/),
+            check('name', 'name incorrect').isString(),
+    ],
+    patchNote)
 
-
-router.get( //get one note
-    '/:id',
-    async (req, res) => {
-        try {
-            const noteId = req.path.slice(1)
-            const currentNote = store.getNote(noteId)
-            currentNote
-                ? res.status(201).json({massage: 'success', currentNote:currentNote})
-                : res.status(501).json({massage: 'failed'})
-
-        } catch (e) {
-            res.status(500).json({massage: 'Something wrong'})
-            console.log(e)
-        }
-    })
-
-
-router.get( //get stats
-    '/stats/getstat',
-    async (req, res) => {
-        try {
-          const stats = store.getStats()
-            stats
-                ? res.status(201).json({massage: 'success', stats: stats})
-                : res.status(501).json({massage: 'failed'})
-
-        } catch (e) {
-            res.status(500).json({massage: 'Something wrong'})
-            console.log(e)
-        }
-    })
-
-
-router.patch( //patch note
-    '/:id',
-    async (req, res) => {
-        try {
-            const {currentNote} = req.body
-            const isSuccess = store.patchNote(currentNote)
-            isSuccess
-                ? res.status(201).json({massage: 'success'})
-                : res.status(501).json({massage: 'failed'})
-
-        } catch (e) {
-            res.status(500).json({massage: 'Something wrong in login'})
-            console.log(e)
-        }
-    })
-
-
-router.patch( //patch note
-    '/archive/:id',
-    async (req, res) => {
-        try {
-            const noteId = req.path.slice(9)
-            const isSuccess = store.archiveHandler(noteId)
-            isSuccess
-                ? res.status(201).json({massage: 'success'})
-                : res.status(501).json({massage: 'failed'})
-
-        } catch (e) {
-            res.status(500).json({massage: 'Something wrong in login'})
-            console.log(e)
-        }
-    })
+router.patch('/archive/:id', archiveNote)
 
 
 module.exports = router

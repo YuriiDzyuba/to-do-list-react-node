@@ -1,11 +1,11 @@
 const {store} = require('../../store/store')
 
-
-const deleteNote = async (req, res) => {
+const patchNote = async (req, res) => {
     try {
-        const noteId = req.path.slice(1)
-        const isItemDeleted = store.deleteNote(noteId)
-        isItemDeleted
+        const currentNote = req.body
+        console.log(currentNote)
+        const isSuccess = store.patchNote(currentNote)
+        isSuccess
             ? res.status(201).json({massage: 'success'})
             : res.status(501).json({massage: 'failed'})
 
@@ -15,4 +15,4 @@ const deleteNote = async (req, res) => {
     }
 }
 
-module.exports = {deleteNote}
+module.exports = {patchNote}

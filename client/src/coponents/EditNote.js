@@ -1,5 +1,5 @@
 import React from 'react';
-import "./react-datepicker.scss";
+import "../styles/react-datepicker.scss";
 import {useDispatch, useSelector} from "react-redux";
 import {
     addNewNote, updateNote,

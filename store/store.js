@@ -2,15 +2,6 @@ const {v4: uuidv4} = require('uuid');
 
 const store = {
     _state: {
-        emptyNote: {
-            id: 'emptyNote',
-            name: '',
-            category: '',
-            content: '',
-            date: '',
-            changedDate: '',
-            isActive: true
-        },
         'ddsf-dfsd-dfdf-sdfsd': {
             id: 'ddsf-dfsd-dfdf-sdfsd',
             name: 'Shopping list',

@@ -1,5 +1,6 @@
 const {store} = require('../../store/store')
 
+
 const getAllNotes = async (req, res) => {
     try {
         res.status(201).json({massage: 'success',initialState:store.getState()})

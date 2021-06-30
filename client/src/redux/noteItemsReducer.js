@@ -124,7 +124,7 @@ export const deleteItem = (itemId) => (dispatch) => {
 }
 
 export const addNewNote = () => (dispatch, getState) => {
-    axios.post(`/api/todo/`, {newNote: getState().edit.currentNote})
+    axios.post(`/api/todo/`, {...getState().edit.currentNote})
         .then(function (response) {
             if (response.data.massage === 'success') {
                 console.log(response.data.newItem, "response.data.newItem")
@@ -140,7 +140,7 @@ export const addNewNote = () => (dispatch, getState) => {
 }
 
 export const updateNote = (itemKey) => (dispatch, getState) => {
-    axios.patch(`/api/todo/${itemKey}`, {currentNote: getState().edit.currentNote})
+    axios.patch(`/api/todo/${itemKey}`, {...getState().edit.currentNote})
         .then(function (response) {
             if (response.data.massage === 'success') {
                 dispatch(updateNoteToState(itemKey, getState().edit.currentNote))

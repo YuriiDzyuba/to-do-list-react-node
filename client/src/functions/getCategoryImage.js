@@ -1,7 +1,7 @@
-import idea from "./img/icons/bell.svg";
-import Quote from "./img/icons/feather.svg";
-import Random from "./img/icons/droplet.svg";
-import task from "./img/icons/code.svg";
+import idea from "../img/icons/bell.svg";
+import Quote from "../img/icons/feather.svg";
+import Random from "../img/icons/droplet.svg";
+import task from "../img/icons/code.svg";
 
 export const getCategoryImage = (categoryType) => {
     switch (categoryType) {

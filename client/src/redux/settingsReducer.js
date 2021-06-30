@@ -27,7 +27,7 @@ export const stateLoaderHandler = () => ({type: IS_STATE_LOADED})
 export const loadCurrentStats = (payload) => ({type: GET_STAT,payload})
 
 export const getStatistics = () => (dispatch) => {
-    axios.get(`/api/todo/stats/getstat`)
+    axios.get(`/api/todo/stats`)
         .then(function (response) {
             dispatch(loadCurrentStats(response.data.stats))
         })
