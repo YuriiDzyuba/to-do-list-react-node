@@ -1,0 +1,33 @@
+{
+  "name": "task3",
+  "version": "1.0.0",
+  "description": "todolist react node",
+  "main": "index.js",
+  "scripts": {
+    "serv": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run serv\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuriiDzyuba/to-do-list-react-node.git"
+  },
+  "author": "yuriy dzyuba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuriiDzyuba/to-do-list-react-node/issues"
+  },
+  "homepage": "https://github.com/YuriiDzyuba/to-do-list-react-node#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.0.1",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7",
+    "uuid": "^8.3.2"
+  }
+}

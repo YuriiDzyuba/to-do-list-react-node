@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="675cc8e8-d531-43e6-b04c-7fefee409091" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/AddNewItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/AllNotes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/AllNotesHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/ArchivedItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/CategoryItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/EditNote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/NoteItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/ToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coponents/react-datepicker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/getCategoryImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/arrow-up-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/code.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/downloadWhite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/droplet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/editWhite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/feather.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/shopping-cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/trashWhite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/uploadWhite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/noteItemsReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/settingsReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config/default.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../routes/todoRoutes.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ucM1sppekCHOysZ6WWz74QFM4G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="675cc8e8-d531-43e6-b04c-7fefee409091" name="Default Changelist" comment="" />
+      <created>1624960211703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624960211703</updated>
+      <workItem from="1624960213014" duration="11000" />
+      <workItem from="1624960254101" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>
